@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies & Gifs By Keyword</title>
+
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="jumbotron text-center"
+        style="background-image: url(https://previews.123rf.com/images/hoperan/hoperan1009/hoperan100900031/7725498-background-for-movie-theme.jpg)">
+        <div class="container">
+            <h1>Movies & Gifs By Keyword</h1>
+            <p style="font-weight: bold;">Search by keyword a massive database of movies and gifs.</p>
+            <form id="newSearch">
+                <div>
+                    <p>
+                        <input type="text" id="search" placeholder="Enter keyword to search.">
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-primary"
+                    style="background-color: black; border-color: black;">Create Keyword</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 id="title">Keywords</h1>
+                <div id="keyword_container"></div>
+            </div>
+
+            <div class="col-md-8">
+                <h1 id="title">Results</h1>
+                <div class="card-group" id="result_container"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Link to the JS file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+#title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.jumbotron {
+    /* background-attachment: fixed; */
+    background-position: 50% 42%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
